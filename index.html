@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/1147af4466.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Rajesh</span><br>From Odisha.</h1>
+            </div>
+           <div class="coat">
+                <!-- <p> "01010011 01101001 01101101 01100001 01101110 01100011 01101000 01100001 01101100 01100001"</p> -->
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Rajesh.jpg" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                   <p>Experienced in 1+ years of Java Developer with expertise in Java, Spring, Hibernate, and RESTful services. Proficient in 
+                    developing scalable solutions and enhancing technology tools. Seeking a Java Development Engineer role to leverage 
+                    skills in software development and contribute to organizational growth.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('tools')">Tools</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links  " onclick="opentab('education')">Education</p>
+                        <p class="tab-links  " onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><p>Java</p> </li>
+                            <li><span>Frameworks</span><p>Spring 5. x (Core, JDBC, Security, MVC, Boot, 
+                                Data JPA), Hibernate 5</p></li>
+                            <li><span>Distributed Tech</span><p> RESTful & Micro Services (rest template,
+                                circuit breaker , web client , config server )</p> </li>
+                            <li><span>Database</span><p>Oracle 10g, MySQL 8.0</p> </li>
+                            <li><span>UI Technology</span><p>Bootstrap 5, HTML 5, CSS</p></li>
+                            <li><span>Unit Testing</span><p>Junit</p></li>
+                            <!-- <li><span>IDE's</span><p> Eclipse , STS , IntelliJ ,VS Code</p></li> -->
+                            <li><span> Tools</span><p> Maven , GIT , Log4j , PostMan , Swagger etc</p></li>
+                            <li><span>Application Server</span><p> Tomcat 9.0</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tools">
+                        <ul>
+                            <li><span>Eclipse</span><br> </li>
+                            <li><span>STS</span><br> </li>
+                            <li><span>IntelliJ</span><br> </li>
+                            <li><span>Postman</span><br></li>
+                            <li><span>VS Code</span><br></li>
+                            <li><span>MySQL</span><br></li>
+                            <li><span>Swagger</span><br></li>
+                            <li><span>PLSQl</span><br></li>
+                            <li><span>SQL Developer</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <p><h1>Programmer</h1></p>
+                       <p><h3>
+                        Path Infotech Limited, Noida | Feb 2023 to Present</h3>
+                        </p><br>
+                        <p> Developed and tested software features using Java, Spring, and Hibernate.
+                            <br>Analysed requirements, designed solutions, and contributed to documentation.
+                            <br>Identified and resolved production and non-production application issues.
+                            <br>Collaborated on the enhancement of existing software.</p>
+                            <br>
+                            <p><h3>Projects</h3></p>
+<ul>
+    
+    <li>
+        <span> Smart Apps Initiative |Dec 2023 to Presen</span><br>
+        Technology –: Jdk 1.8, Core Java, Spring5..x, Spring Boot, Spring Data JPA, React, Html 5, CSS, JavaScript,
+MySql5.0, Maven, Apache Poi, etc.
+<br> Designed and deployed SaaS solutions using the architecture of SOA (Service Oriented Architecture).
+<br>Supported multi-tenant architecture and rapid onboarding.
+<br>Configured self-service features for clients.
+    </li>
+    <li>
+        <span> SCRM – Redevelopment |Mar 2023 to Oct 2023</span><br>
+        Technology –: Java 1.8, Oracle 10g, Struts, JSP, JS, Html, CSS.
+        <br>Led redevelopment of call management features in a CRM application.
+        <br>Implemented a robust interface for call transfers and optimized technician visits.
+        <br>Integrated Warranty Management functionality for efficient tracking.
+    </li>
+    
+</ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology (2018 - 2022) (8.87 CGPA)</span><br> Electrical Engineering from BPUT, Odisha.</li>
+                            <li><span>Diploma (2015 - 2018)(7.87 CGPA)</span><br> Electrical Engineering from SCTE&VT, Odisha.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Bike riding</span><br></li>
+                            <li><span>Traveling</span><br></li>
+                            <li><span>Cooking</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------services----------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design</h2>
+                    <p>As a seasoned web developer, I specialize in leveraging Java, Spring Boot, and SQL to build robust and scalable solutions. From database design to server-side logic, let's create a technology-driven masterpiece that aligns with your goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>API</h2>
+                    <p>Analyzing the Problem, Design , Programming , Testing , Debugging and Documentation 
+                        of new Software solutions. Contributing in all phases of the Development Lifecycle.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>web design</h2>
+                    <p>As a seasoned web developer, I specialize in leveraging Java, Spring Boot, and SQL to build robust and scalable solutions. From database design to server-side logic, let's create a technology-driven masterpiece that aligns with your goals.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+                
+            </div>
+        </div>
+    </div>
+    <!-----------------------------portfolio------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-11.jpg">
+                    <div class="layer">
+                        <h3>Hotel User Rating Management</h3>
+                        <p>This application has been designed based on the Microservices architecture, incorporating systems for users, hotels, and ratings.</p>
+                        <a href="https://github.com/SimanchalaSethi/Hotel-User-Rating-Management"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-112.jpg">
+                    <div class="layer">
+                        <h3>Back-End-Bank-Application</h3>
+                        <p>This is a secure and user-friendly online
+                            banking system using Java and Spring Boot. Designed a MySQL database with tables for user
+                            details, account information, and transaction
+                            records. Implemented features such as user
+                            authentication, online fund transfers, balance
+                            checks, and transaction history retrieval. Utilized
+                            JSON Web Tokens (JWT) for secure authentication.</p>
+                        <a href="https://github.com/SimanchalaSethi/Back-End-Bank-Application"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Shopping-App-Prototype</h3>
+                        <p>This is a simple shopping web prototype Java web app.</p>
+                        <a href="https://github.com/SimanchalaSethi/Shopping-App-Prototype"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -------------------------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>rajeshkumarjena332@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>977742886</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rajeshkumarjena332/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                           <a href="https://github.com/rajeshkumarjena1997"><i class="fa-brands fa-square-github"></i></a>     
+                        <a href="https://www.instagram.com/rajesh.kumar.jena_/"><i class="fa-brands fa-instagram"></i></a>
+                          <!-- <a href="https://www.hackerrank.com/profile/simanchala_js/"><i class="fa-brands fa-hackerrank"></i></a> -->
+                    </div>
+                    <a href="images/RAJESH KUMAR JENA.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <body>
+     
+</body>
+
+</html>
